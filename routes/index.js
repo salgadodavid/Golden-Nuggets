@@ -7,8 +7,7 @@ const Post = require('../models/Post')
 //@desc Login/Landing Page
 //@Route GET /
 router.get('/', ensureGuest, (req,res) => {
-    res.render('login',
-    {layout: 'login' }
+    res.render('index.ejs'
     )
 })
 

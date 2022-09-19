@@ -68,7 +68,7 @@ app.use(function(req, res, next){
 })
 
 //STATIC FOLDER
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(__dirname+ '/public')) 
 
 //ROUTES
 app.use('/', require('./routes/index'))
