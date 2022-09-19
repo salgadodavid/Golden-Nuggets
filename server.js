@@ -16,7 +16,11 @@ require('./config/passport')(passport)
 
 connectDB()
 
+
 const app = express()
+
+//Using EJS for views
+app.set("view engine", "ejs");
 
 //BODY PARSER
 app.use(express.urlencoded({ extended: false}))
@@ -35,7 +39,7 @@ app.use(
 )
 
 //DETERMINE LEVEL OF LOGGING
-if(process.env.DB_STRING === 'development') {
+if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
 }
 
