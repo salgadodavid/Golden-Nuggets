@@ -1,5 +1,6 @@
 const path = require('path')
 const express = require('express')
+const app = express()
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const methodOverride = require('method-override')
@@ -7,6 +8,8 @@ const passport = require('passport')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
+const mainRoutes = require("./routes/index");
+const authRoutes = require("./routes/auth")
 
 // LOAD CONFIG
 dotenv.config({path: './config/config.env'})
@@ -14,10 +17,9 @@ dotenv.config({path: './config/config.env'})
 //LOAD PASSPORT
 require('./config/passport')(passport)
 
+//Connect to DB
 connectDB()
 
-
-const app = express()
 
 //Using EJS for views
 app.set("view engine", "ejs");
@@ -71,8 +73,8 @@ app.use(function(req, res, next){
 app.use(express.static(__dirname+ '/public')) 
 
 //ROUTES
-app.use('/', require('./routes/index'))
-app.use('/auth', require('./routes/auth'))
+app.use('/', mainRoutes)
+app.use('/auth', authRoutes)
 
 const PORT = process.env.PORT || 3000
 
