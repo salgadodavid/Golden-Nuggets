@@ -74,7 +74,8 @@ app.use(express.static(__dirname+ '/public'))
 
 //ROUTES
 app.use('/', mainRoutes)
-app.use('/auth', authRoutes)
+app.use('/auth', require('./routes/auth'))
+// app.use('/auth', authRoutes)
 
 const PORT = process.env.PORT || 3000
 
