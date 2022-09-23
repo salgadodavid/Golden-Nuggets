@@ -1,27 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="bumblebee">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden Nuggets</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <nav class="menu-container">
-        <!-- Burger Menu -->
-        <input type="checkbox" aria-label="Toggle menu" />
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="navbar bg-primary text-primary-content">
+        <div class="flex-1">
+            <img class="max-h-9 mx-7" src="css/images/golden-nuggets-logo-lr.png" alt="Golden Nuggets Logo">
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal p-0">
+            <li><a>Read More</a></li>
+            <li><a>About Us</a></li>
+            <li> <a class="btn btn-accent text-primary" href="/auth/google">Sign In</a></li>           
+          </ul>
+        </div>
+        
+      </div>
+
+
 
         <!-- logo -->
-        <a href="#" class="menu-logo">
+        <!-- <li>
+            <a href="/auth/google">Login</a>
+        </li> -->
+        <!-- <a href="#" class="menu-logo">
             <img src="css/images/golden-nuggets-logo-lr.png" alt="Golden Nuggets Logo">
-        </a>   
+        </a>    -->
+    
+
+
+     <!-- <nav class="menu-container">
+        <!- Burger Menu -->
+        <!-- <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span> -->
+
+     
         
         <!-- menu items -->
-        <div class="menu">
+        <!-- <div class="menu">
             <ul>
                 <li>
                     <a href="#">Home</a>
@@ -31,10 +55,6 @@
                 <li>
                     <a href="#">Sign-up</a>
                 </li>
-                <li>
-                    <a href="/auth/google">Login</a>
-                </li>
+              
             </ul>
-        </div>
-    </nav>
-    
+        </div> --> 
