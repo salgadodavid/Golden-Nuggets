@@ -1,14 +1,15 @@
 const express = require('express')
 const router = express.Router()
-const homeController = require("../controllers/index");
-const postsController = require("../controllers/posts");
 const commentsController = require("../controllers/comments");
 const { ensureAuth, ensureGuest } = require('../middleware/auth')
+// const homeController = require("../controllers/index");
+// const postsController = require("../controllers/posts");
+
 
 //Main Routes 
-router.get("/", homeController.getIndex);
-router.get("/feed", ensureAuth, postsController.getPosts);
-router.post("/post/createPost", ensureAuth, postsController.createPost);
+// router.get("/", homeController.getIndex);
+// router.get("/feed", ensureAuth, postsController.getPosts);
+router.post("/createComment", ensureAuth, commentsController.createComment);
 // router.get("/comment", ensureAuth, commentsController.getComments);
 
 
