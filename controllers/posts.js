@@ -1,7 +1,7 @@
 const Post = require("../models/Post");
 
 module.exports = {
-    getFeed: async (req, res) => {
+    getPosts: async (req, res) => {
         try {
         //   const posts = await Post.find().sort({ createdAt: "desc" }).lean();  // , { posts: posts }
           res.render("feed.ejs");  
@@ -9,4 +9,20 @@ module.exports = {
           console.log(err);
         }
       },
+      createPost: async (req, res) => {
+        try {
+          console.log(req.body)
+          await Post.create({
+            googleId: req.user.googleId,
+            nugget: req.body.newPost,
+            likes: 0,
+            user: req.user.id,
+          });
+          console.log("Post has been added!");
+          res.redirect("/feed");  //redirected to profile
+        } catch (err) {
+          console.log(err);
+        }
+      },
+      
 }

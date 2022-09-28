@@ -5,11 +5,8 @@ const ConversationSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    image: {
-        type: String
-    },
-    text: {
-        type: String
+    nugget: {
+        type: String,
     },
     likes: {
         type: Number,

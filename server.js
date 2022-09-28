@@ -9,7 +9,9 @@ const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
 const mainRoutes = require("./routes/index");
-const authRoutes = require("./routes/auth")
+const profileRoutes = require("./routes/profile")
+const authRoutes = require("./routes/auth");
+
 
 // LOAD CONFIG
 dotenv.config({path: './config/config.env'})
@@ -25,7 +27,7 @@ connectDB()
 app.set("view engine", "ejs");
 
 //BODY PARSER
-app.use(express.urlencoded({ extended: false}))
+app.use(express.urlencoded({ extended: true}))
 app.use(express.json())
 
 // Method override
@@ -74,6 +76,7 @@ app.use(express.static(__dirname+ '/public'))
 
 //ROUTES
 app.use('/', mainRoutes)
+app.use('/profile', profileRoutes)
 app.use('/auth', require('./routes/auth'))
 // app.use('/auth', authRoutes)
 

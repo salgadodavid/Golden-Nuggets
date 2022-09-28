@@ -1,7 +1,11 @@
-<div class="flex justify-center mt-5 ">
-<form class="flex w-8/12 justify-center">
-   <label for="comment" name="postComment"></label><br>
-   <input type="text" placeholder="Aha's" class="input input-bordered input-lg w-full max-w-xl"/>
-</form>
-</div>
-   <!-- lg -->
+<section class="flex justify-center mt-10" id="feedposts">
+    <div class="card w-6/12 bg-base-100 shadow-xl mb-5">
+       <div class="flex card-body justify-center mt-10">
+          <form action="/post/createPost" class="flex w-8/12 justify-center" method="POST">
+             <label for="newPost"></label><br>
+             <input type="text"  placeholder="Submit an Aha" name="newPost" id="post-input"  class="input input-bordered input-lg w-full max-w-xl"/>
+             <button type="submit">Submit</button>
+          </form>
+       </div>
+    </div>
+</section>

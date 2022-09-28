@@ -12,7 +12,13 @@
             </div>                   
           <p class="my-5">The movie was so good they decided to make a book out of it!</p>
           <div>
-            <input type="text" placeholder="Reply" class="flex input input-bordered input-primary max-w-xs justify-items-end" />
+            <form action="/comment/createComment" method="POST">
+              <div>
+                  <label for="comment" class="form-label">Comment</label>
+                  <input type="text" class="form-control" id="comment" name="comment">
+              </div>
+              <button type="submit">Submit</button>
+            </form>
           </div>  
         </div>
     </div>

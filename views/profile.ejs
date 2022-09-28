@@ -1,0 +1,35 @@
+<%- include('partials/header') -%>
+<section>
+    <%- include('partials/newpost') -%>
+</section>
+<section>
+    <h4 class="flex justify-center mt-10">My Nuggets</h4>
+
+    <% posts.forEach(post => {%>
+
+    <div class="card w-6/12 bg-base-100 shadow-xl mb-5">
+        <div class="flex card-body justify-center mt-10">
+          <h2 class="card-title mb-5">Author's Book</h2>
+          <div>
+            <div class="avatar">
+              <div class="max-w-2 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                 <img class="max-w-16 max-h-16" src="https://placeimg.com/192/192/people" alt="user profile picture"/>
+              </div>
+              <span class="flex ml-6 self-center">post.googleId</span>    
+            </div>                   
+          <p class="my-5">post.nugget</p>
+          <div>
+            <form action="/comment/createComment" method="POST">
+              <div>
+                  <label for="comment" class="form-label">Comment</label>
+                  <input type="text" class="form-control" id="comment" name="comment">
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>  
+        </div>
+    </div>
+    }) <% } %>
+</section>
+
+<%- include('partials/footer') -%>
