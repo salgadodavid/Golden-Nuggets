@@ -4,9 +4,42 @@
 </section>
 <section>
     <h4 class="flex justify-center mt-10">Trending Nuggets</h4>
+    <% posts.forEach(post => {%>
+        <section class="flex justify-center mt-10" id="feedposts">
+
+            <div class="card w-6/12 bg-base-100 shadow-xl mb-5">
+                <div class="flex card-body justify-center mt-10">
+                  <h2 class="card-title mb-5">Author's Book</h2>
+                  <div>
+                    <div class="avatar">
+                      <div class="max-w-2 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+
+                         <img class="max-w-16 max-h-16" src="https://placeimg.com/192/192/people" alt="user profile picture"/>
+                      </div>
+                      <span class="flex ml-6 self-center"> username </span>    
+                    </div>                   
+                  <p class="my-5"><%= post.nugget %></p>
+                  <div>
+                    <form action="/comment/createComment" method="POST">
+                      <div>
+                          <label for="comment" class="form-label">Comment</label>
+                          <input action="/comment/postComment" method="POST" type="text" class="form-control" id="comment" name="comment" >
+                      </div>
+                      <button type="submit">Submit</button>
+                    </form>
+                    <button class="btn gap-2" formaction="/post/likePost">
+                      Like
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                    </button>
+                  </div>  
+                </div>
+            </div>
+        </section>
+    <% }) %>
+
 </section>
 <section>
-    <%- include('partials/feedposts') -%>
+   
 </section>
 
 <%- include('partials/footer') -%>

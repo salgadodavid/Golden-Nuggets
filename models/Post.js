@@ -5,8 +5,15 @@ const ConversationSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    bookTitle: {
+        type: String
+    },
     nugget: {
         type: String,
+    },
+    archived: {
+        type: Number,
+        default: 0
     },
     likes: {
         type: Number,

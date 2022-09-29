@@ -8,13 +8,14 @@ const CommentSchema = new mongoose.Schema({
     image: {
         type: String
     },
-    text: {
+    comment: {
         type: String
     },
     likes: {
         type: Number,
         default: 0
     },
+    
     createdAt: {
         type: Date,
         default: Date.now
