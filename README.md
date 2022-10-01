@@ -1,6 +1,6 @@
 # Golden-Nuggets
 
-![Golden-Nuggets-App-min](https://user-images.githubusercontent.com/86321333/193845519-9ff644a3-463a-478b-8347-f0ac7f1bb241.png)
+![Golden-Nuggets-Landing-Page-min](https://user-images.githubusercontent.com/86321333/193850686-31c80a81-b1d0-4f7b-b7e2-d390516315fe.png)
 
 Optimizations
 * Hero Image: use srcset to display different image resolutions
