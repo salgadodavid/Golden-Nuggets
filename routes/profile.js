@@ -4,6 +4,6 @@ const profileController = require("../controllers/profile");
 const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 
-router.get("/profile", ensureAuth, profileController.getProfile);
+router.get("/profile/googleId", ensureAuth, profileController.getProfile);
 
 module.exports = router;

@@ -9,9 +9,9 @@ const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
 const mainRoutes = require("./routes/index");
-const profileRoutes = require("./routes/profile")
 const authRoutes = require("./routes/auth");
 const commentRoutes = require("./routes/comment");
+const profileRoutes = require("./routes/comment");
 
 
 // LOAD CONFIG
@@ -77,8 +77,8 @@ app.use(express.static(__dirname+ '/public'))
 
 //ROUTES
 app.use('/', mainRoutes)
-app.use('/profile', profileRoutes)
 app.use('/comment', commentRoutes)
+app.use('/profile', profileRoutes)
 app.use('/auth', require('./routes/auth'))
 // app.use('/auth', authRoutes)
 
