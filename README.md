@@ -1,6 +1,11 @@
 ## Golden-Nuggets
 
+# Landing Page
 ![Golden-Nuggets-Landing-Page-min](https://user-images.githubusercontent.com/86321333/193850686-31c80a81-b1d0-4f7b-b7e2-d390516315fe.png)
+
+# Feed
+![golden-nuggets-feed](https://user-images.githubusercontent.com/86321333/193936780-68b52ded-9487-48ee-a5b5-66f503893d6e.png)
+
 
 ## About
 Have you ever had a conversation with a friend about a book and suddenly something clicked? This Full-Stack app allows readers to share those "Aha" moments with each other. 
