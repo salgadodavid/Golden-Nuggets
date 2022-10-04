@@ -7,10 +7,10 @@ About
 
 Tech Used:
 
-*Front-End:
+* Front-End:
 HTML, CSS, Tailwind, JavaScript.
 
-*Back-End:
+* Back-End:
 Node, Express, MongoDb Google OAuth
 
 Optimizations
