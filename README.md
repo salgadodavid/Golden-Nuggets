@@ -4,7 +4,11 @@
 ![Golden-Nuggets-Landing-Page-min](https://user-images.githubusercontent.com/86321333/193850686-31c80a81-b1d0-4f7b-b7e2-d390516315fe.png)
 
 # Feed
-![golden-nuggets-feed](https://user-images.githubusercontent.com/86321333/193936780-68b52ded-9487-48ee-a5b5-66f503893d6e.png)
+![Golden-nuggets-app-feed](https://user-images.githubusercontent.com/86321333/194169888-ab0003be-eb7c-4e0d-9179-26a0afba7c7d.png)
+
+# User Profile Page
+![golden-nuggets-profile-page](https://user-images.githubusercontent.com/86321333/194169984-ffb6c88e-8175-4ccb-8690-6908991b20f1.png)
+
 
 
 ## About
