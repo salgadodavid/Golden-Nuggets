@@ -1,10 +1,11 @@
-<section class="flex justify-center mt-10" id="feedposts">
-    <div class="card w-6/12 bg-base-100 shadow-xl mb-5">
+<section class="flex justify-center mt-10 mb-5" id="feedposts">
+    <div class="card w-6/12 bg-base-100 shadow-xl mb-0">
        <div class="flex card-body justify-center mt-10">
+         <span class="text-primary mb-5">Share a golden nugget</span>
           <form action="/post/createPost" class="flex w-8/12 justify-center" method="POST">
              <label for="newPost"></label><br>
-             <input type="text"  placeholder="Submit an Aha" name="newPost" id="post-input"  class="input input-bordered input-lg w-full max-w-xl"/>
-             <button type="submit">Submit</button>
+             <input type="text"  placeholder="Lorem Ipsum " name="newPost" id="post-input"  class="input input-bordered input-lg w-full max-w-xl flex justify-self-start"/>
+             <button type="submit" class="ml-10 justify-self-start">Submit</button>
           </form>
        </div>
     </div>
