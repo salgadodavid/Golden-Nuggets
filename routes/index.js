@@ -11,6 +11,7 @@ router.get("/", homeController.getIndex);
 router.get("/feed", ensureAuth, postsController.getFeed);
 router.get("/profile/:googleId", ensureAuth, profileController.getProfile);
 router.post("/post/createPost", ensureAuth, postsController.createPost);
+router.get("/login", homeController.getLogin)
 // router.get("/comment", ensureAuth, commentsController.getComments);
 
 
