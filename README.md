@@ -32,3 +32,4 @@ Node, Express, MongoDb Google OAuth
 * Hero Image: use srcset to display different image resolutions.
 * Add Lazy loading to landing page photo and feed.
 * Add Search Function.
+* Add groups
