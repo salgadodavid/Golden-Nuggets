@@ -28,8 +28,11 @@ Node, Express, MongoDb Google OAuth
 * Learned how to integrate OAuth to authenticate users.
 * Learned how to perform multiple simultaneous queries from a database.
 
+
 ## Optimizations
 * Hero Image: use srcset to display different image resolutions.
 * Add Lazy loading to landing page photo and feed.
 * Add Search Function.
-* Add groups
+
+
+
