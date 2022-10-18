@@ -12,6 +12,7 @@ const mainRoutes = require("./routes/index");
 const authRoutes = require("./routes/auth");
 const commentRoutes = require("./routes/comment");
 const profileRoutes = require("./routes/comment");
+const groupRoutes = require("./routes/group");
 
 
 // LOAD CONFIG
@@ -79,6 +80,7 @@ app.use(express.static(__dirname+ '/public'))
 app.use('/', mainRoutes)
 app.use('/comment', commentRoutes)
 app.use('/profile', profileRoutes)
+app.use('/group', groupRoutes)
 app.use('/auth', require('./routes/auth'))
 // app.use('/auth', authRoutes)
 

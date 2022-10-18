@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const GroupSchema = new mongoose.Schema({
-    googleId: {
+    groupMod: {
         type: String,
         required: true
     },
@@ -14,8 +14,8 @@ const GroupSchema = new mongoose.Schema({
     description: {
         type: String,
     },
-    members: {
-        type: Array,
+    members:{
+        type: String,
     },
     createdAt: {
         type: Date,
@@ -23,4 +23,4 @@ const GroupSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Conversation', ConversationSchema)
+module.exports = mongoose.model('Group', GroupSchema)

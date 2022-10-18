@@ -1,7 +1,7 @@
 <%- include('partials/header') -%>
 <section>
     <h3>Create a new Reading Community</h3>
-    <form>
+    <form action="/group/createGroup" method="POST">
         <p>
           <input type="text" id="bookTitle" name="bookTitle"/>
           <label for="bookTitle">Book Title</label>
@@ -11,9 +11,10 @@
            <label for="author">Author</label>
         </p>
         <p>
-           <input type="text" id="author" name="author"/>
-           <label for="author">Author</label>
+           <input type="text" id="description" name="description"/>
+           <label for="description">Group Description</label>
          </p>
+         <button type="submit">Create New Group</button>
     </form>
 
 </section>
